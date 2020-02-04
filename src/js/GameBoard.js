@@ -28,7 +28,7 @@ export default class GameBoard {
         oldItemField.innerHTML = '';
       }
       const itemField = document.getElementById(`field${this.itemIndex}`);
-      itemField.innerHTML = '<img id = "goblin" src = "./img/goblin.png">';
+      itemField.innerHTML = '<img id = "goblin" src = "../img/goblin.png">';
       this.oldIndex = this.itemIndex;
       this.missedGoblin += 1;
       if (this.missedGoblin === 6) {
