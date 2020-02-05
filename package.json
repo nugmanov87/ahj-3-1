@@ -1,5 +1,5 @@
 {
-  "name": "ahj-homework-2-3",
+  "name": "ahj-homework-2-1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nugmanov87/ahj2-3.git"
+    "url": "git+https://github.com/nugmanov87/ahj-homeworks-dom-2-1.git"
   },
   "author": "grudge",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nugmanov87/ahj2-3/issues"
+    "url": "https://github.com/nugmanov87/ahj-homeworks-dom-2-1"
   },
-  "homepage": "https://github.com/nugmanov87/ahj2-3#readme",
+  "homepage": "https://github.com/nugmanov87/ahj-homeworks-dom-2-1#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
