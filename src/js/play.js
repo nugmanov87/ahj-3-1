@@ -1,10 +1,10 @@
 /* eslint-disable class-methods-use-this */
-export default class play {
+export default class Play {
   constructor(tablet) {
     this.oldPosition = 0;
     this.newPosition = 0;
     this.strike = 0;
-    this.numberStrike = document.getElementById("points");
+    this.numberStrike = document.getElementById('points');
     this.overshoot = 0;
     this.tablet = tablet;
     this.boardSize = tablet.boardSize;
@@ -12,14 +12,14 @@ export default class play {
   }
 
   init() {
-    this.tablet.board.addEventListener("click", e => {
+    this.tablet.board.addEventListener('click', (e) => {
       this.boardClick(e);
     });
     this.jumpImg();
   }
 
   boardClick(e) {
-    if (e.target.id !== "goblin") {
+    if (e.target.id !== 'goblin') {
       return;
     }
     this.additionNumberStrike();
@@ -34,7 +34,7 @@ export default class play {
 
   clearingCell(e) {
     const Goblin = e;
-    Goblin.parentNode.innerHTML = "";
+    Goblin.parentNode.innerHTML = '';
   }
 
   jumpImg() {
@@ -49,7 +49,7 @@ export default class play {
     } while (this.newPosition === this.oldPosition);
     if (this.oldPosition >= 0) {
       const oldItemField = document.getElementById(`field${this.oldPosition}`);
-      oldItemField.innerHTML = "";
+      oldItemField.innerHTML = '';
     }
     const itemField = document.getElementById(`field${this.newPosition}`);
     itemField.innerHTML = '<img id = "goblin" src = "./goblin.png">';
@@ -57,7 +57,7 @@ export default class play {
     this.overshoot += 1;
     if (this.overshoot > 5) {
       clearInterval(this.interval);
-      alert("GAME OVER");
+      alert('GAME OVER');
     }
   }
 }

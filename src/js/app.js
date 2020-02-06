@@ -1,7 +1,7 @@
-import board from "./board";
-import play from "./play";
+import Board from './board';
+import Play from './play';
 
-const gamesBoard = new board(4);
+const gamesBoard = new Board(4);
 gamesBoard.createBoard();
-const game = new play(gamesBoard);
+const game = new Play(gamesBoard);
 game.init();
