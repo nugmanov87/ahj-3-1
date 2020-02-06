@@ -11,8 +11,17 @@
   cursor: url("../img/molot.png"), default;
 }
 
+p {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .field {
   border: 2px solid green;
+  background-color: royalblue;
   width: 100px;
   height: 100px;
 }
